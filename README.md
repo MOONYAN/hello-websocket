@@ -15,10 +15,10 @@ node server.js
 ## Skill
 
 - server
-    - express
-    - ws
+    - [express](https://expressjs.com/) version 4.17.1
+    - [ws](https://github.com/websockets/ws) version 7.4.1
 - client
-    - WebSocket
+    - [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
 
 ## Event
 
