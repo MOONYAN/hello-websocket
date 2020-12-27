@@ -16,15 +16,16 @@ wss.on('connection', ws => {
         ws.send(data);
 
         wss.clients.forEach(client => {
-            client.send(`Brocast: ${data}`)
+            client.send(`Brocast: ${data}`);
         });
     })
 
     ws.on('close', () => {
-        console.log('Close connected')
+        clearInterval(sendNowTime);
+        console.log('Close connected');
     })
 
     const sendNowTime = setInterval(() => {
-        ws.send(String(new Date()))
-    }, 1000)
-})
+        ws.send(String(new Date()));
+    }, 1000);
+});

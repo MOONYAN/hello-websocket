@@ -28,9 +28,9 @@ node server.js
     - on **close**
 
 - client
-    - **onopen**
-    - **onmessage**
-    - **onclose**
+    - on **open**
+    - on **message**
+    - on **close**
 
 ## Messaging
 
